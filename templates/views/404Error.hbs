@@ -1,0 +1,13 @@
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+  <body>
+      {{>navbar}}
+    <div class="d-flex flex-column mt-5 align-items-center error">
+      <img src="images/404Error.svg" alt="" />
+      <h1 class="mt-2">{{errorMsg}}</h1>
+      <a href="/"><button class="btn btn-primary mt-4">Go Back</button></a>  
+    </div>
+  </body>
+</html>

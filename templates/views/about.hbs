@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+  <body>
+{{>navbar}}
+    <!-- main header -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <div class="col-md-6 col-12 main_header_right align-items-center">
+              <figure>
+                <img src="images/mohit.jpg" alt="mohit" title="mohit saud" />
+              </figure>
+            </div>
+
+            <!-- left side div  -->
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Hello Everyone. Stay Safe and Take Care</p>
+              <h1>
+                Learning
+                <span class="text-color"> Web Development. </span>Trying to be
+                Full Stack Web Developer
+              </h1>
+              <a href="https://github.com/manutdmohit" target="_blank"><button
+                  class="btn btn-primary"
+                >About Me</button></a>
+
+            </div>
+
+            <!-- right side div -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    {{>footer}}
+
+    {{>script}}
+   <script>
+  let year = document.getElementById("year") ; 
+  
+  let date = new Date();  
+  
+  let currYear=date.getFullYear();
+   
+  year.innerText=currYear
+</script>
+  </body>
+</html>
